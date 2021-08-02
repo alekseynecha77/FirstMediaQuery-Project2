@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to left, #57a3ff, #ffcccc);
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+body p{
+    width:300px;
+    padding:10px;
+    margin:12px auto;
+}
+main{
+  display: block;
+
+}
+ul {
+  list-style:none;
+  padding-left:0;
+}
+#main-box{
+  padding-top: 5px;
+  margin-top: 15px;
+
+}
+
+.container{
+  padding: 10px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  display: flex;
+}
+.gallery{
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  margin-bottom: 1em;
+
+}
+.gallery img{
+  max-width:100%;
+  height:auto;
+}
+
+h6{
+  font: 1em sans-serif;
+  font-weight: 600;
+}
+footer{
+  background-color: lightblue;
+  padding: 1.5rem;
+}
+p{
+  border-style: inset;
+}
+.background-info{
+  border-style: none;
+}
+.contact-info{
+  border-style: none;
+}
+/* p{ */
+  /* font-size: 20px; */
+/* } */
+
+@media screen and (min-width: 768px){
+.container,
+.gallery {
+    flex: 1 50%;
+    padding: 0 5px;
+}
+
+p {
+  text-align: center;
+}
+
+}
+
+@media  screen and (max-width: 1024px) {
+  .gallery{
+    flex-basis: 0;
+    flex: 1 30%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
