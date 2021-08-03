@@ -52,12 +52,6 @@ header {
     text-transform: uppercase;
   }
 
-  /* .home,  */
-  /* .portfolio, */
-  /* .contact, */
-  /* .skill { */
-      /* display: none; */
-  /* } */
 
   ul {
       list-style: none;
@@ -76,19 +70,12 @@ header {
     display: flex;
   }
 
-  .name {
-      padding-left: 16px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
 
   .top {
       padding-right: 12px;
       padding-top: 20px;
       padding-bottom: 20px;
   }
-
-
 
 
   .header-name {
@@ -233,20 +220,12 @@ header {
         flex-wrap: wrap;
     }
 
-    .name,
-    .home,
-    .portfolio,
-    .contact {
-        padding-bottom: 20px;
-    }
-
     .header-name {
         padding-left: 2%;
     }
 
-    
     li{
     padding:  0 10px;
         }
 
-  }
+}
