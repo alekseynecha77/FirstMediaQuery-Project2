@@ -1,92 +1,187 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-*{
+*  {
+    font-family: 'Roboto', sans-serif; 
     box-sizing: border-box;
-}
-body{
-  background: linear-gradient(to left, #57a3ff, #ffcccc);
-  text-align: center;
-  font-family: 'Work Sans', sans-serif;
-  margin: 0 auto;
-  max-width: 1024px;
-}
-body p{
-    width:300px;
-    padding:10px;
-    margin:12px auto;
-}
-main{
-  display: block;
-
-}
-ul {
-  list-style:none;
-  padding-left:0;
-}
-#main-box{
-  padding-top: 5px;
-  margin-top: 15px;
-
+    text-align: center;
 }
 
-.container{
-  padding: 10px;
-  max-width: 1200px;
-  flex-wrap: wrap;
-  display: flex;
-}
-.gallery{
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px;
-  margin-bottom: 1em;
-
-}
-.gallery img{
-  max-width:100%;
-  height:auto;
+main {
+    background: white;
 }
 
-h6{
-  font: 1em sans-serif;
-  font-weight: 600;
-}
-footer{
-  background-color: lightblue;
-  padding: 1.5rem;
-}
-p{
-  border-style: inset;
-}
-.background-info{
-  border-style: none;
-}
-.contact-info{
-  border-style: none;
-}
-/* p{ */
-  /* font-size: 20px; */
-/* } */
 
-@media screen and (min-width: 768px){
-.container,
-.gallery {
-    flex: 1 50%;
-    padding: 0 5px;
+li {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+  } 
+
+.paragraph {
+    font-size: 21px;
+    padding-bottom: 10%;
 }
 
-p {
-  text-align: center;
+body {
+      text-align: center;
+      background:white;
+    }
+
+html, body {
+    height: 100%;
 }
 
-}
+header {
+      background: rgb(247, 243, 243);
+      padding: .5em 0;
+      padding-bottom: 20px;
+   } 
 
-@media  screen and (max-width: 1024px) {
-  .gallery{
-    flex-basis: 0;
-    flex: 1 30%;
+.bottom {
+      background: rgb(247, 243, 243);
+      margin-top: 5px;
+      overflow: hidden;
   }
+
+  img {
+      max-width: 100%;
+  }
+ 
+  .top {
+    text-transform: uppercase;
+  }
+
+  /* .home,  */
+  /* .portfolio, */
+  /* .contact, */
+  /* .skill { */
+      /* display: none; */
+  /* } */
+
+  ul {
+      list-style: none;
+      justify-content: space-between;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  footer {
+    padding-top: 20px;
+  }
+
+  .footer-nav {
+    display: flex;
+  }
+
+  .name {
+      padding-left: 16px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  .top {
+      padding-right: 12px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+
+
+
+  .header-name {
+      font-size: 32px;
+  }
+
+  .class-skills {
+    background-color: lightblue;
+    padding-top: 7px;
+    padding-bottom: 12px;
+}
+
+.color {
+    color: red;
+}
+
+  
+
+/* 768px */
+
+  @media screen and (min-width: 768px) {
+    .main-header, 
+    .main-nav,
+    .row,
+    .paragraph,
+    .header-image {
+        display: flex;
+    }
+
+    .col {
+        flex: 1 50%;
+        padding: 0 5px;
+      }
+    
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .paragraph {
+        order: -1;
+    }
+
+    .main-nav {
+        padding-bottom: 40px;
+    }
+
+    li{
+        background-color: rgb(247, 243, 243);
+        color: black;
+        padding: 10px;
+        display: block;
+        margin: 10px;
+    }
+
+    p {
+        align-items: center;
+    }
+
+    .header-image {
+        padding: 0 4px;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .home, 
+    .portfolio,
+    .contact,
+    .skill {
+        display: inline-block;
+        text-transform: uppercase;
+        padding-top: 19px;
+        justify-content: space-between;
+        align-items: initial;
+    }
+
+    .home {
+        padding-left: 300px;
+    }
+
+    .contact {
+        padding-right: 10px;
+    }
+
+    .main-nav {
+        justify-content: center;
+    }
+
+    .name {
+        padding-left: 9px;
+    }
+  
 }
 
 
@@ -94,30 +189,64 @@ p {
 
 
 
+  /* 1024px */
 
+  @media (min-width: 1024px) {
+    .main-header, 
+    .main-nav,
+    .row,
+    .paragraph,
+    .header-image,
+    .top-header {
+        display: flex;
+    }
 
+    .top-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 
+    .home, 
+    .portfolio,
+    .contact,
+    .skill {
+        text-align: right;
+        font-size: 14px;
+        padding-top: 1.8%;
+    }
 
+    .image {
+        padding-right: 25px;
+    }
 
+    .home {
+        padding-left: 600px;
+    }
 
+    .col {
+        flex-basis: 0;
+        flex: 1 30%;
+    }
 
+    .row {
+        flex-wrap: wrap;
+    }
 
+    .name,
+    .home,
+    .portfolio,
+    .contact {
+        padding-bottom: 20px;
+    }
 
+    .header-name {
+        padding-left: 2%;
+    }
 
+    
+    li{
+    padding:  0 10px;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
