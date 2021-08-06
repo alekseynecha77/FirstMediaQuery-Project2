@@ -10,13 +10,20 @@ main {
 }
 
 
-li {
+li{
     background-color: white;
     color: black;
     padding: 10px;
     display: block;
     margin: 10px;
   } 
+  /* .backto-top  { */
+    /* background-color: white; */
+    /* color: black; */
+    /* padding: 10px; */
+    /* display: block; */
+    /* margin: 10px; */
+  /* } */
 
 .paragraph {
     font-size: 21px;
@@ -92,7 +99,17 @@ header {
     color: red;
 }
 
-  
+.footer-name{
+    margin-top: 0;
+    margin-left: 20px;
+}
+.sub-footer2{
+    display: none;
+}
+.sub-footer1{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* 768px */
 
@@ -104,6 +121,21 @@ header {
     .header-image {
         display: flex;
     }
+    .sub-footer2,
+    .footer-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub-nav{
+        padding: 0 20px;
+    }
+    .footer-name2{
+        margin-left: 20px;
+    }
+    .footer-name{
+        display: none;
+    }
+
 
     .col {
         flex: 1 50%;
@@ -118,7 +150,7 @@ header {
         order: -1;
     }
 
-    .main-nav {
+    .main-nav{
         padding-bottom: 40px;
     }
 
@@ -161,20 +193,22 @@ header {
         padding-right: 10px;
     }
 
-    .main-nav {
+    .main-nav  {
         justify-content: center;
     }
 
     .name {
         padding-left: 9px;
     }
+    /* .backto-top{ */
+        /* padding-left: 20rem; */
+    /* } */
+  
+  
+  
+  
   
 }
-
-
-
-
-
 
   /* 1024px */
 
@@ -188,7 +222,8 @@ header {
         display: flex;
     }
 
-    .top-header {
+    .top-header,
+    .lower-header {
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
