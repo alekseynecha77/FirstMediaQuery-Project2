@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *  {
     font-family: 'Roboto', sans-serif; 
     box-sizing: border-box;
     text-align: center;
 }
-
+ul{
+    padding-left: 0;
+}
 main {
     background: white;
 }
 
 
 li{
-    background-color: white;
+    /* background-color: #F2DFEC; */
     color: black;
     padding: 10px;
     display: block;
@@ -23,26 +26,33 @@ li{
     padding-bottom: 10%;
 }
 
-body {
-      text-align: center;
-      background:white;
-    }
+    
 
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #57a3ff, #ffcccc);
+    animation: gradient 10s linear infinite;
+    animation-direction: alternate;
 }
 
+@keyframes gradient{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+
+}
+
+
 header {
-      background: rgb(247, 243, 243);
       padding: .5em 0;
       padding-bottom: 20px;
+      /* background-color: #EEE3C1; */
    } 
-
-.bottom {
-      background: rgb(247, 243, 243);
-      margin-top: 5px;
-      overflow: hidden;
-  }
 
   img {
       max-width: 100%;
@@ -60,10 +70,15 @@ header {
 
   a {
       text-decoration: none;
+      font-family: 'Pacifico', cursive;
+
   }
 
   footer {
     padding-top: 20px;
+    left: 0;
+    right: 0;
+    
   }
 
   .footer-nav {
@@ -79,14 +94,15 @@ header {
 
 
   .header-name {
+      font-family: "Style Script";
       font-size: 32px;
   }
 
-  .class-skills {
-    background-color: lightblue;
-    padding-top: 7px;
-    padding-bottom: 12px;
-}
+  /* .class-skills { */
+    /* background-color: lightblue; */
+    /* padding-top: 7px; */
+    /* padding-bottom: 12px; */
+/* } */
 
 .color {
     color: red;
@@ -102,6 +118,11 @@ header {
 .sub-footer1{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+}
+#portfolio{
+    background-color: #CD7DB2;
+
 }
 
 /* 768px */
@@ -148,11 +169,12 @@ header {
     }
 
     li{
-        background-color: rgb(247, 243, 243);
+        /* background-color: rgb(247, 243, 243); */
         color: black;
         padding: 10px;
         display: block;
         margin: 10px;
+        font-family: 'Pacifico', cursive;
     }
 
     p {
