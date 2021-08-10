@@ -162,6 +162,7 @@ header {
     }
     .footer-name2{
         margin-left: 20px;
+        align-self: center;
     }
     .footer-name{
         display: none;
